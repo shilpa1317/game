@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('Memory-Flip-1.png');
+  background-size: cover;
+ 
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+} 
+  .home {
+    background-image: "{{ url_for('static', filename='OIP.jpg') }}";
+    color: white;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .welcome {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .banner {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+  }
+  
+  .start-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #ff3b2e;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+  }
+  
+  .card.flipped {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }

@@ -1,0 +1,16 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Flip Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Memory Flip Game!</h1>
+    <img src="{{ url_for('static', filename='OIP.jpg') }}" alt="Memory Game" width="300">
+    <br><br>
+    <a href="/game">Start Game</a>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
